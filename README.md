@@ -8,4 +8,4 @@ Samples appr. at 4ms
 
 Has extensive GUI
 
-![screenshot](/screen.png)
+![screenshot](/screen.jpg)
