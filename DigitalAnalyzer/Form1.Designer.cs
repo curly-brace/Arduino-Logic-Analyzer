@@ -53,6 +53,22 @@
             this.load = new System.Windows.Forms.Button();
             this.save = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.bit0 = new System.Windows.Forms.CheckBox();
+            this.bit1 = new System.Windows.Forms.CheckBox();
+            this.bit2 = new System.Windows.Forms.CheckBox();
+            this.bit3 = new System.Windows.Forms.CheckBox();
+            this.bit4 = new System.Windows.Forms.CheckBox();
+            this.bit5 = new System.Windows.Forms.CheckBox();
+            this.bit6 = new System.Windows.Forms.CheckBox();
+            this.bit7 = new System.Windows.Forms.CheckBox();
+            this.bit8 = new System.Windows.Forms.CheckBox();
+            this.bit9 = new System.Windows.Forms.CheckBox();
+            this.bit10 = new System.Windows.Forms.CheckBox();
+            this.bit11 = new System.Windows.Forms.CheckBox();
+            this.bit12 = new System.Windows.Forms.CheckBox();
+            this.bit13 = new System.Windows.Forms.CheckBox();
+            this.bit14 = new System.Windows.Forms.CheckBox();
+            this.bit15 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,42 +133,42 @@
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             series1.Legend = "Legend1";
             series1.Name = "green1";
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             series2.Legend = "Legend1";
             series2.Name = "green2";
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            series3.Color = System.Drawing.Color.Yellow;
             series3.Legend = "Legend1";
             series3.Name = "yellow1";
             series4.ChartArea = "ChartArea1";
             series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            series4.Color = System.Drawing.Color.Yellow;
             series4.Legend = "Legend1";
             series4.Name = "yellow2";
             series5.ChartArea = "ChartArea1";
             series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            series5.Color = System.Drawing.Color.Fuchsia;
             series5.Legend = "Legend1";
             series5.Name = "purple1";
             series6.ChartArea = "ChartArea1";
             series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            series6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             series6.Legend = "Legend1";
             series6.Name = "purple2";
             series7.ChartArea = "ChartArea1";
             series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            series7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             series7.Legend = "Legend1";
             series7.Name = "purple3";
             series8.ChartArea = "ChartArea1";
             series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series8.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            series8.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             series8.Legend = "Legend1";
             series8.Name = "purple4";
             series9.ChartArea = "ChartArea1";
@@ -292,11 +308,219 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // bit0
+            // 
+            this.bit0.AutoSize = true;
+            this.bit0.BackColor = System.Drawing.Color.Transparent;
+            this.bit0.Checked = true;
+            this.bit0.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.bit0.Location = new System.Drawing.Point(1058, 53);
+            this.bit0.Name = "bit0";
+            this.bit0.Size = new System.Drawing.Size(15, 14);
+            this.bit0.TabIndex = 16;
+            this.bit0.UseVisualStyleBackColor = false;
+            // 
+            // bit1
+            // 
+            this.bit1.AutoSize = true;
+            this.bit1.BackColor = System.Drawing.Color.Transparent;
+            this.bit1.Checked = true;
+            this.bit1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.bit1.Location = new System.Drawing.Point(1058, 67);
+            this.bit1.Name = "bit1";
+            this.bit1.Size = new System.Drawing.Size(15, 14);
+            this.bit1.TabIndex = 16;
+            this.bit1.UseVisualStyleBackColor = false;
+            // 
+            // bit2
+            // 
+            this.bit2.AutoSize = true;
+            this.bit2.BackColor = System.Drawing.Color.Transparent;
+            this.bit2.Checked = true;
+            this.bit2.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.bit2.Location = new System.Drawing.Point(1058, 81);
+            this.bit2.Name = "bit2";
+            this.bit2.Size = new System.Drawing.Size(15, 14);
+            this.bit2.TabIndex = 16;
+            this.bit2.UseVisualStyleBackColor = false;
+            // 
+            // bit3
+            // 
+            this.bit3.AutoSize = true;
+            this.bit3.BackColor = System.Drawing.Color.Transparent;
+            this.bit3.Checked = true;
+            this.bit3.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.bit3.Location = new System.Drawing.Point(1058, 95);
+            this.bit3.Name = "bit3";
+            this.bit3.Size = new System.Drawing.Size(15, 14);
+            this.bit3.TabIndex = 16;
+            this.bit3.UseVisualStyleBackColor = false;
+            // 
+            // bit4
+            // 
+            this.bit4.AutoSize = true;
+            this.bit4.BackColor = System.Drawing.Color.Transparent;
+            this.bit4.Checked = true;
+            this.bit4.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.bit4.Location = new System.Drawing.Point(1058, 109);
+            this.bit4.Name = "bit4";
+            this.bit4.Size = new System.Drawing.Size(15, 14);
+            this.bit4.TabIndex = 16;
+            this.bit4.UseVisualStyleBackColor = false;
+            // 
+            // bit5
+            // 
+            this.bit5.AutoSize = true;
+            this.bit5.BackColor = System.Drawing.Color.Transparent;
+            this.bit5.Checked = true;
+            this.bit5.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.bit5.Location = new System.Drawing.Point(1058, 123);
+            this.bit5.Name = "bit5";
+            this.bit5.Size = new System.Drawing.Size(15, 14);
+            this.bit5.TabIndex = 16;
+            this.bit5.UseVisualStyleBackColor = false;
+            // 
+            // bit6
+            // 
+            this.bit6.AutoSize = true;
+            this.bit6.BackColor = System.Drawing.Color.Transparent;
+            this.bit6.Checked = true;
+            this.bit6.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.bit6.Location = new System.Drawing.Point(1058, 137);
+            this.bit6.Name = "bit6";
+            this.bit6.Size = new System.Drawing.Size(15, 14);
+            this.bit6.TabIndex = 16;
+            this.bit6.UseVisualStyleBackColor = false;
+            // 
+            // bit7
+            // 
+            this.bit7.AutoSize = true;
+            this.bit7.BackColor = System.Drawing.Color.Transparent;
+            this.bit7.Checked = true;
+            this.bit7.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.bit7.Location = new System.Drawing.Point(1058, 151);
+            this.bit7.Name = "bit7";
+            this.bit7.Size = new System.Drawing.Size(15, 14);
+            this.bit7.TabIndex = 16;
+            this.bit7.UseVisualStyleBackColor = false;
+            // 
+            // bit8
+            // 
+            this.bit8.AutoSize = true;
+            this.bit8.BackColor = System.Drawing.Color.Transparent;
+            this.bit8.Checked = true;
+            this.bit8.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.bit8.Location = new System.Drawing.Point(1058, 165);
+            this.bit8.Name = "bit8";
+            this.bit8.Size = new System.Drawing.Size(15, 14);
+            this.bit8.TabIndex = 16;
+            this.bit8.UseVisualStyleBackColor = false;
+            // 
+            // bit9
+            // 
+            this.bit9.AutoSize = true;
+            this.bit9.BackColor = System.Drawing.Color.Transparent;
+            this.bit9.Checked = true;
+            this.bit9.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.bit9.Location = new System.Drawing.Point(1058, 179);
+            this.bit9.Name = "bit9";
+            this.bit9.Size = new System.Drawing.Size(15, 14);
+            this.bit9.TabIndex = 16;
+            this.bit9.UseVisualStyleBackColor = false;
+            // 
+            // bit10
+            // 
+            this.bit10.AutoSize = true;
+            this.bit10.BackColor = System.Drawing.Color.Transparent;
+            this.bit10.Checked = true;
+            this.bit10.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.bit10.Location = new System.Drawing.Point(1058, 193);
+            this.bit10.Name = "bit10";
+            this.bit10.Size = new System.Drawing.Size(15, 14);
+            this.bit10.TabIndex = 16;
+            this.bit10.UseVisualStyleBackColor = false;
+            // 
+            // bit11
+            // 
+            this.bit11.AutoSize = true;
+            this.bit11.BackColor = System.Drawing.Color.Transparent;
+            this.bit11.Checked = true;
+            this.bit11.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.bit11.Location = new System.Drawing.Point(1058, 207);
+            this.bit11.Name = "bit11";
+            this.bit11.Size = new System.Drawing.Size(15, 14);
+            this.bit11.TabIndex = 16;
+            this.bit11.UseVisualStyleBackColor = false;
+            // 
+            // bit12
+            // 
+            this.bit12.AutoSize = true;
+            this.bit12.BackColor = System.Drawing.Color.Transparent;
+            this.bit12.Checked = true;
+            this.bit12.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.bit12.Location = new System.Drawing.Point(1058, 221);
+            this.bit12.Name = "bit12";
+            this.bit12.Size = new System.Drawing.Size(15, 14);
+            this.bit12.TabIndex = 16;
+            this.bit12.UseVisualStyleBackColor = false;
+            // 
+            // bit13
+            // 
+            this.bit13.AutoSize = true;
+            this.bit13.BackColor = System.Drawing.Color.Transparent;
+            this.bit13.Checked = true;
+            this.bit13.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.bit13.Location = new System.Drawing.Point(1058, 235);
+            this.bit13.Name = "bit13";
+            this.bit13.Size = new System.Drawing.Size(15, 14);
+            this.bit13.TabIndex = 16;
+            this.bit13.UseVisualStyleBackColor = false;
+            // 
+            // bit14
+            // 
+            this.bit14.AutoSize = true;
+            this.bit14.BackColor = System.Drawing.Color.Transparent;
+            this.bit14.Checked = true;
+            this.bit14.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.bit14.Location = new System.Drawing.Point(1058, 249);
+            this.bit14.Name = "bit14";
+            this.bit14.Size = new System.Drawing.Size(15, 14);
+            this.bit14.TabIndex = 16;
+            this.bit14.UseVisualStyleBackColor = false;
+            // 
+            // bit15
+            // 
+            this.bit15.AutoSize = true;
+            this.bit15.BackColor = System.Drawing.Color.Transparent;
+            this.bit15.Checked = true;
+            this.bit15.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.bit15.Location = new System.Drawing.Point(1058, 263);
+            this.bit15.Name = "bit15";
+            this.bit15.Size = new System.Drawing.Size(15, 14);
+            this.bit15.TabIndex = 16;
+            this.bit15.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1197, 462);
+            this.Controls.Add(this.bit15);
+            this.Controls.Add(this.bit14);
+            this.Controls.Add(this.bit13);
+            this.Controls.Add(this.bit12);
+            this.Controls.Add(this.bit11);
+            this.Controls.Add(this.bit10);
+            this.Controls.Add(this.bit9);
+            this.Controls.Add(this.bit8);
+            this.Controls.Add(this.bit7);
+            this.Controls.Add(this.bit6);
+            this.Controls.Add(this.bit5);
+            this.Controls.Add(this.bit4);
+            this.Controls.Add(this.bit3);
+            this.Controls.Add(this.bit2);
+            this.Controls.Add(this.bit1);
+            this.Controls.Add(this.bit0);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.save);
             this.Controls.Add(this.load);
@@ -330,6 +554,22 @@
         private System.Windows.Forms.Button load;
         private System.Windows.Forms.Button save;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.CheckBox bit0;
+        private System.Windows.Forms.CheckBox bit1;
+        private System.Windows.Forms.CheckBox bit2;
+        private System.Windows.Forms.CheckBox bit3;
+        private System.Windows.Forms.CheckBox bit4;
+        private System.Windows.Forms.CheckBox bit5;
+        private System.Windows.Forms.CheckBox bit6;
+        private System.Windows.Forms.CheckBox bit7;
+        private System.Windows.Forms.CheckBox bit8;
+        private System.Windows.Forms.CheckBox bit9;
+        private System.Windows.Forms.CheckBox bit10;
+        private System.Windows.Forms.CheckBox bit11;
+        private System.Windows.Forms.CheckBox bit12;
+        private System.Windows.Forms.CheckBox bit13;
+        private System.Windows.Forms.CheckBox bit14;
+        private System.Windows.Forms.CheckBox bit15;
     }
 }
 

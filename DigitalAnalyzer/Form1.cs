@@ -131,6 +131,11 @@ namespace DigitalAnalyzer {
             for (int i = 15; i >= 0; i--) {
                 //if (bin[i] == '\n' || data[i] == ';') continue;
 
+                if (!((CheckBox)Controls.Find("bit" + i, false)[0]).Checked) {
+                    offset += 2;
+                    continue;
+                }
+
                 double y = offset + (bin[i] == '1' ? 1 : 0);
 
                 chart1.Series[i].Points.AddXY(prevX, y);
