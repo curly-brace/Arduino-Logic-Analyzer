@@ -1,26 +1,26 @@
-#define green1 2
-#define green2 3
-#define yellow1 4
-#define yellow2 5
-#define purple1 6
-#define purple2 7
-#define purple3 8
-#define purple4 9
-#define data6 10
-#define data7 11
+#define green1 2   // rs
+#define green2 3  // can be pulled down
+#define yellow1 4   // ?
+#define yellow2 5 // can be pulled down
+#define purple1 6  // ? somewhat different
+#define purple2 7  // ?
+#define purple3 8  // can be pulled up (but with contrst changes)
+#define purple4 9 // can be pulled down
 #define data0 19
 #define data1 18
 #define data2 17
 #define data3 16
 #define data4 15
-#define data5 14
+#define data5 14  //green
+#define data6 10 //green
+#define data7 11 //green
 #define powerPin 12
 
 void setup() {
   pinMode(green1, INPUT);
   pinMode(green2, INPUT);
   pinMode(yellow1, INPUT);
-  pinMode(yellow1, INPUT);
+  pinMode(yellow2, INPUT);
   pinMode(purple1, INPUT);
   pinMode(purple2, INPUT);
   pinMode(purple3, INPUT);
