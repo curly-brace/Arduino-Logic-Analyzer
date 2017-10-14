@@ -23,24 +23,24 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series21 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series25 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series26 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series27 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series28 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series29 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series30 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series31 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series32 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -76,164 +76,160 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(124, 9);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(93, 7);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
-            this.button1.Text = "save data";
+            this.button1.Text = "Save data";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(672, 8);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(504, 6);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 28);
+            this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
-            this.button2.Text = "close";
+            this.button2.Text = "Close";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(965, 14);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(724, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 17);
+            this.label1.Size = new System.Drawing.Size(126, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "4160 microseconds each";
             // 
             // chart1
             // 
-            chartArea1.AxisX.Interval = 1D;
-            chartArea1.AxisX.LabelAutoFitStyle = System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.DecreaseFont;
-            chartArea1.AxisX.MajorGrid.Interval = 1D;
-            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.DarkOliveGreen;
-            chartArea1.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
-            chartArea1.AxisX.MaximumAutoSize = 1F;
-            chartArea1.AxisX.ScaleView.MinSize = 0D;
-            chartArea1.AxisX.ScaleView.Size = 100D;
-            chartArea1.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea1.AxisY.Interval = 1D;
-            chartArea1.AxisY.MajorGrid.Interval = 1D;
-            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            chartArea1.AxisY.Maximum = 33D;
-            chartArea1.AxisY.MaximumAutoSize = 1F;
-            chartArea1.AxisY.Minimum = 0D;
-            chartArea1.AxisY.ScaleView.MinSize = 33D;
-            chartArea1.AxisY.ScaleView.Size = 33D;
-            chartArea1.AxisY.ScaleView.Zoomable = false;
-            chartArea1.BackColor = System.Drawing.Color.Black;
-            chartArea1.CursorX.IsUserEnabled = true;
-            chartArea1.CursorX.IsUserSelectionEnabled = true;
-            chartArea1.CursorX.SelectionColor = System.Drawing.Color.Gainsboro;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(232, 42);
-            this.chart1.Margin = new System.Windows.Forms.Padding(4);
+            chartArea2.AxisX.Interval = 1D;
+            chartArea2.AxisX.LabelAutoFitStyle = System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.DecreaseFont;
+            chartArea2.AxisX.MajorGrid.Interval = 1D;
+            chartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.DarkOliveGreen;
+            chartArea2.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
+            chartArea2.AxisX.MaximumAutoSize = 1F;
+            chartArea2.AxisX.ScaleView.MinSize = 0D;
+            chartArea2.AxisX.ScaleView.Size = 100D;
+            chartArea2.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea2.AxisY.Interval = 1D;
+            chartArea2.AxisY.MajorGrid.Interval = 1D;
+            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            chartArea2.AxisY.Maximum = 33D;
+            chartArea2.AxisY.MaximumAutoSize = 1F;
+            chartArea2.AxisY.Minimum = 0D;
+            chartArea2.AxisY.ScaleView.MinSize = 33D;
+            chartArea2.AxisY.ScaleView.Size = 33D;
+            chartArea2.AxisY.ScaleView.Zoomable = false;
+            chartArea2.BackColor = System.Drawing.Color.Black;
+            chartArea2.CursorX.IsUserEnabled = true;
+            chartArea2.CursorX.IsUserSelectionEnabled = true;
+            chartArea2.CursorX.SelectionColor = System.Drawing.Color.Gainsboro;
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(174, 34);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            series1.Legend = "Legend1";
-            series1.Name = "green1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            series2.Legend = "Legend1";
-            series2.Name = "green2";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.Color = System.Drawing.Color.Yellow;
-            series3.Legend = "Legend1";
-            series3.Name = "yellow1";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series4.Color = System.Drawing.Color.Yellow;
-            series4.Legend = "Legend1";
-            series4.Name = "yellow2";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series5.Color = System.Drawing.Color.Fuchsia;
-            series5.Legend = "Legend1";
-            series5.Name = "purple1";
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            series6.Legend = "Legend1";
-            series6.Name = "purple2";
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            series7.Legend = "Legend1";
-            series7.Name = "purple3";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series8.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            series8.Legend = "Legend1";
-            series8.Name = "purple4";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series9.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            series9.Legend = "Legend1";
-            series9.Name = "data0";
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series10.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            series10.Legend = "Legend1";
-            series10.Name = "data1";
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series11.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            series11.Legend = "Legend1";
-            series11.Name = "data2";
-            series12.ChartArea = "ChartArea1";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series12.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            series12.Legend = "Legend1";
-            series12.Name = "data3";
-            series13.ChartArea = "ChartArea1";
-            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series13.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            series13.Legend = "Legend1";
-            series13.Name = "data4";
-            series14.ChartArea = "ChartArea1";
-            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series14.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            series14.Legend = "Legend1";
-            series14.Name = "data5";
-            series15.ChartArea = "ChartArea1";
-            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series15.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            series15.Legend = "Legend1";
-            series15.Name = "data6";
-            series16.ChartArea = "ChartArea1";
-            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series16.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            series16.Legend = "Legend1";
-            series16.Name = "data7";
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
-            this.chart1.Series.Add(series3);
-            this.chart1.Series.Add(series4);
-            this.chart1.Series.Add(series5);
-            this.chart1.Series.Add(series6);
-            this.chart1.Series.Add(series7);
-            this.chart1.Series.Add(series8);
-            this.chart1.Series.Add(series9);
-            this.chart1.Series.Add(series10);
-            this.chart1.Series.Add(series11);
-            this.chart1.Series.Add(series12);
-            this.chart1.Series.Add(series13);
-            this.chart1.Series.Add(series14);
-            this.chart1.Series.Add(series15);
-            this.chart1.Series.Add(series16);
-            this.chart1.Size = new System.Drawing.Size(1348, 517);
+            series17.ChartArea = "ChartArea1";
+            series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series17.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            series17.Legend = "Legend1";
+            series17.Name = "green1";
+            series18.ChartArea = "ChartArea1";
+            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series18.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            series18.Legend = "Legend1";
+            series18.Name = "green2";
+            series19.ChartArea = "ChartArea1";
+            series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series19.Color = System.Drawing.Color.Yellow;
+            series19.Legend = "Legend1";
+            series19.Name = "yellow1";
+            series20.ChartArea = "ChartArea1";
+            series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series20.Color = System.Drawing.Color.Yellow;
+            series20.Legend = "Legend1";
+            series20.Name = "yellow2";
+            series21.ChartArea = "ChartArea1";
+            series21.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series21.Color = System.Drawing.Color.Fuchsia;
+            series21.Legend = "Legend1";
+            series21.Name = "purple1";
+            series22.ChartArea = "ChartArea1";
+            series22.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series22.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series22.Legend = "Legend1";
+            series22.Name = "purple2";
+            series23.ChartArea = "ChartArea1";
+            series23.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series23.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series23.Legend = "Legend1";
+            series23.Name = "purple3";
+            series24.ChartArea = "ChartArea1";
+            series24.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series24.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series24.Legend = "Legend1";
+            series24.Name = "purple4";
+            series25.ChartArea = "ChartArea1";
+            series25.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series25.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            series25.Legend = "Legend1";
+            series25.Name = "data0";
+            series26.ChartArea = "ChartArea1";
+            series26.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series26.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            series26.Legend = "Legend1";
+            series26.Name = "data1";
+            series27.ChartArea = "ChartArea1";
+            series27.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series27.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            series27.Legend = "Legend1";
+            series27.Name = "data2";
+            series28.ChartArea = "ChartArea1";
+            series28.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series28.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            series28.Legend = "Legend1";
+            series28.Name = "data3";
+            series29.ChartArea = "ChartArea1";
+            series29.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series29.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            series29.Legend = "Legend1";
+            series29.Name = "data4";
+            series30.ChartArea = "ChartArea1";
+            series30.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series30.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            series30.Legend = "Legend1";
+            series30.Name = "data5";
+            series31.ChartArea = "ChartArea1";
+            series31.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series31.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            series31.Legend = "Legend1";
+            series31.Name = "data6";
+            series32.ChartArea = "ChartArea1";
+            series32.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series32.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            series32.Legend = "Legend1";
+            series32.Name = "data7";
+            this.chart1.Series.Add(series17);
+            this.chart1.Series.Add(series18);
+            this.chart1.Series.Add(series19);
+            this.chart1.Series.Add(series20);
+            this.chart1.Series.Add(series21);
+            this.chart1.Series.Add(series22);
+            this.chart1.Series.Add(series23);
+            this.chart1.Series.Add(series24);
+            this.chart1.Series.Add(series25);
+            this.chart1.Series.Add(series26);
+            this.chart1.Series.Add(series27);
+            this.chart1.Series.Add(series28);
+            this.chart1.Series.Add(series29);
+            this.chart1.Series.Add(series30);
+            this.chart1.Series.Add(series31);
+            this.chart1.Series.Add(series32);
+            this.chart1.Size = new System.Drawing.Size(1011, 420);
             this.chart1.TabIndex = 6;
             this.chart1.Text = "chart1";
             this.chart1.CursorPositionChanged += new System.EventHandler<System.Windows.Forms.DataVisualization.Charting.CursorEventArgs>(this.chart1_CursorPositionChanged);
@@ -241,86 +237,76 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(16, 9);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Location = new System.Drawing.Point(12, 7);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 28);
+            this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 8;
-            this.button4.Text = "save control";
+            this.button4.Text = "Save control";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // ctrlList
             // 
             this.ctrlList.FormattingEnabled = true;
-            this.ctrlList.ItemHeight = 16;
-            this.ctrlList.Location = new System.Drawing.Point(16, 42);
-            this.ctrlList.Margin = new System.Windows.Forms.Padding(4);
+            this.ctrlList.Location = new System.Drawing.Point(12, 34);
             this.ctrlList.Name = "ctrlList";
-            this.ctrlList.Size = new System.Drawing.Size(99, 516);
+            this.ctrlList.Size = new System.Drawing.Size(75, 420);
             this.ctrlList.TabIndex = 9;
             // 
             // dataList
             // 
             this.dataList.FormattingEnabled = true;
-            this.dataList.ItemHeight = 16;
-            this.dataList.Location = new System.Drawing.Point(124, 42);
-            this.dataList.Margin = new System.Windows.Forms.Padding(4);
+            this.dataList.Location = new System.Drawing.Point(93, 34);
             this.dataList.Name = "dataList";
-            this.dataList.Size = new System.Drawing.Size(99, 516);
+            this.dataList.Size = new System.Drawing.Size(75, 420);
             this.dataList.TabIndex = 10;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(564, 8);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(423, 6);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 28);
+            this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 11;
-            this.button3.Text = "open";
+            this.button3.Text = "Open";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button1_Click);
             // 
             // resetChk
             // 
             this.resetChk.AutoSize = true;
-            this.resetChk.Location = new System.Drawing.Point(780, 13);
-            this.resetChk.Margin = new System.Windows.Forms.Padding(4);
+            this.resetChk.Location = new System.Drawing.Point(585, 11);
             this.resetChk.Name = "resetChk";
-            this.resetChk.Size = new System.Drawing.Size(136, 21);
+            this.resetChk.Size = new System.Drawing.Size(106, 17);
             this.resetChk.TabIndex = 12;
             this.resetChk.Text = "reset on connect";
             this.resetChk.UseVisualStyleBackColor = true;
             // 
             // load
             // 
-            this.load.Location = new System.Drawing.Point(1480, 9);
-            this.load.Margin = new System.Windows.Forms.Padding(4);
+            this.load.Location = new System.Drawing.Point(1110, 7);
             this.load.Name = "load";
-            this.load.Size = new System.Drawing.Size(100, 28);
+            this.load.Size = new System.Drawing.Size(75, 23);
             this.load.TabIndex = 13;
-            this.load.Text = "load";
+            this.load.Text = "Load";
             this.load.UseVisualStyleBackColor = true;
             this.load.Click += new System.EventHandler(this.load_Click);
             // 
             // save
             // 
-            this.save.Location = new System.Drawing.Point(1372, 9);
-            this.save.Margin = new System.Windows.Forms.Padding(4);
+            this.save.Location = new System.Drawing.Point(1029, 7);
             this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(100, 28);
+            this.save.Size = new System.Drawing.Size(75, 23);
             this.save.TabIndex = 14;
-            this.save.Text = "save";
+            this.save.Text = "Save";
             this.save.UseVisualStyleBackColor = true;
             this.save.Click += new System.EventHandler(this.save_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(1200, 9);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Location = new System.Drawing.Point(900, 7);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 28);
+            this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 15;
-            this.button5.Text = "fill lists";
+            this.button5.Text = "Fill lists";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -330,10 +316,9 @@
             this.bit0.BackColor = System.Drawing.Color.Transparent;
             this.bit0.Checked = true;
             this.bit0.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit0.Location = new System.Drawing.Point(1411, 65);
-            this.bit0.Margin = new System.Windows.Forms.Padding(4);
+            this.bit0.Location = new System.Drawing.Point(1058, 53);
             this.bit0.Name = "bit0";
-            this.bit0.Size = new System.Drawing.Size(18, 17);
+            this.bit0.Size = new System.Drawing.Size(15, 14);
             this.bit0.TabIndex = 16;
             this.bit0.UseVisualStyleBackColor = false;
             // 
@@ -343,10 +328,9 @@
             this.bit1.BackColor = System.Drawing.Color.Transparent;
             this.bit1.Checked = true;
             this.bit1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit1.Location = new System.Drawing.Point(1411, 82);
-            this.bit1.Margin = new System.Windows.Forms.Padding(4);
+            this.bit1.Location = new System.Drawing.Point(1058, 67);
             this.bit1.Name = "bit1";
-            this.bit1.Size = new System.Drawing.Size(18, 17);
+            this.bit1.Size = new System.Drawing.Size(15, 14);
             this.bit1.TabIndex = 16;
             this.bit1.UseVisualStyleBackColor = false;
             // 
@@ -356,10 +340,9 @@
             this.bit2.BackColor = System.Drawing.Color.Transparent;
             this.bit2.Checked = true;
             this.bit2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit2.Location = new System.Drawing.Point(1411, 100);
-            this.bit2.Margin = new System.Windows.Forms.Padding(4);
+            this.bit2.Location = new System.Drawing.Point(1058, 81);
             this.bit2.Name = "bit2";
-            this.bit2.Size = new System.Drawing.Size(18, 17);
+            this.bit2.Size = new System.Drawing.Size(15, 14);
             this.bit2.TabIndex = 16;
             this.bit2.UseVisualStyleBackColor = false;
             // 
@@ -369,10 +352,9 @@
             this.bit3.BackColor = System.Drawing.Color.Transparent;
             this.bit3.Checked = true;
             this.bit3.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit3.Location = new System.Drawing.Point(1411, 117);
-            this.bit3.Margin = new System.Windows.Forms.Padding(4);
+            this.bit3.Location = new System.Drawing.Point(1058, 95);
             this.bit3.Name = "bit3";
-            this.bit3.Size = new System.Drawing.Size(18, 17);
+            this.bit3.Size = new System.Drawing.Size(15, 14);
             this.bit3.TabIndex = 16;
             this.bit3.UseVisualStyleBackColor = false;
             // 
@@ -382,10 +364,9 @@
             this.bit4.BackColor = System.Drawing.Color.Transparent;
             this.bit4.Checked = true;
             this.bit4.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit4.Location = new System.Drawing.Point(1411, 134);
-            this.bit4.Margin = new System.Windows.Forms.Padding(4);
+            this.bit4.Location = new System.Drawing.Point(1058, 109);
             this.bit4.Name = "bit4";
-            this.bit4.Size = new System.Drawing.Size(18, 17);
+            this.bit4.Size = new System.Drawing.Size(15, 14);
             this.bit4.TabIndex = 16;
             this.bit4.UseVisualStyleBackColor = false;
             // 
@@ -395,10 +376,9 @@
             this.bit5.BackColor = System.Drawing.Color.Transparent;
             this.bit5.Checked = true;
             this.bit5.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit5.Location = new System.Drawing.Point(1411, 151);
-            this.bit5.Margin = new System.Windows.Forms.Padding(4);
+            this.bit5.Location = new System.Drawing.Point(1058, 123);
             this.bit5.Name = "bit5";
-            this.bit5.Size = new System.Drawing.Size(18, 17);
+            this.bit5.Size = new System.Drawing.Size(15, 14);
             this.bit5.TabIndex = 16;
             this.bit5.UseVisualStyleBackColor = false;
             // 
@@ -408,10 +388,9 @@
             this.bit6.BackColor = System.Drawing.Color.Transparent;
             this.bit6.Checked = true;
             this.bit6.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit6.Location = new System.Drawing.Point(1411, 169);
-            this.bit6.Margin = new System.Windows.Forms.Padding(4);
+            this.bit6.Location = new System.Drawing.Point(1058, 137);
             this.bit6.Name = "bit6";
-            this.bit6.Size = new System.Drawing.Size(18, 17);
+            this.bit6.Size = new System.Drawing.Size(15, 14);
             this.bit6.TabIndex = 16;
             this.bit6.UseVisualStyleBackColor = false;
             // 
@@ -421,10 +400,9 @@
             this.bit7.BackColor = System.Drawing.Color.Transparent;
             this.bit7.Checked = true;
             this.bit7.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit7.Location = new System.Drawing.Point(1411, 186);
-            this.bit7.Margin = new System.Windows.Forms.Padding(4);
+            this.bit7.Location = new System.Drawing.Point(1058, 151);
             this.bit7.Name = "bit7";
-            this.bit7.Size = new System.Drawing.Size(18, 17);
+            this.bit7.Size = new System.Drawing.Size(15, 14);
             this.bit7.TabIndex = 16;
             this.bit7.UseVisualStyleBackColor = false;
             // 
@@ -434,10 +412,9 @@
             this.bit8.BackColor = System.Drawing.Color.Transparent;
             this.bit8.Checked = true;
             this.bit8.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit8.Location = new System.Drawing.Point(1411, 203);
-            this.bit8.Margin = new System.Windows.Forms.Padding(4);
+            this.bit8.Location = new System.Drawing.Point(1058, 165);
             this.bit8.Name = "bit8";
-            this.bit8.Size = new System.Drawing.Size(18, 17);
+            this.bit8.Size = new System.Drawing.Size(15, 14);
             this.bit8.TabIndex = 16;
             this.bit8.UseVisualStyleBackColor = false;
             // 
@@ -447,10 +424,9 @@
             this.bit9.BackColor = System.Drawing.Color.Transparent;
             this.bit9.Checked = true;
             this.bit9.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit9.Location = new System.Drawing.Point(1411, 220);
-            this.bit9.Margin = new System.Windows.Forms.Padding(4);
+            this.bit9.Location = new System.Drawing.Point(1058, 179);
             this.bit9.Name = "bit9";
-            this.bit9.Size = new System.Drawing.Size(18, 17);
+            this.bit9.Size = new System.Drawing.Size(15, 14);
             this.bit9.TabIndex = 16;
             this.bit9.UseVisualStyleBackColor = false;
             // 
@@ -460,10 +436,9 @@
             this.bit10.BackColor = System.Drawing.Color.Transparent;
             this.bit10.Checked = true;
             this.bit10.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit10.Location = new System.Drawing.Point(1411, 238);
-            this.bit10.Margin = new System.Windows.Forms.Padding(4);
+            this.bit10.Location = new System.Drawing.Point(1058, 193);
             this.bit10.Name = "bit10";
-            this.bit10.Size = new System.Drawing.Size(18, 17);
+            this.bit10.Size = new System.Drawing.Size(15, 14);
             this.bit10.TabIndex = 16;
             this.bit10.UseVisualStyleBackColor = false;
             // 
@@ -473,10 +448,9 @@
             this.bit11.BackColor = System.Drawing.Color.Transparent;
             this.bit11.Checked = true;
             this.bit11.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit11.Location = new System.Drawing.Point(1411, 255);
-            this.bit11.Margin = new System.Windows.Forms.Padding(4);
+            this.bit11.Location = new System.Drawing.Point(1058, 207);
             this.bit11.Name = "bit11";
-            this.bit11.Size = new System.Drawing.Size(18, 17);
+            this.bit11.Size = new System.Drawing.Size(15, 14);
             this.bit11.TabIndex = 16;
             this.bit11.UseVisualStyleBackColor = false;
             // 
@@ -486,10 +460,9 @@
             this.bit12.BackColor = System.Drawing.Color.Transparent;
             this.bit12.Checked = true;
             this.bit12.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit12.Location = new System.Drawing.Point(1411, 272);
-            this.bit12.Margin = new System.Windows.Forms.Padding(4);
+            this.bit12.Location = new System.Drawing.Point(1058, 221);
             this.bit12.Name = "bit12";
-            this.bit12.Size = new System.Drawing.Size(18, 17);
+            this.bit12.Size = new System.Drawing.Size(15, 14);
             this.bit12.TabIndex = 16;
             this.bit12.UseVisualStyleBackColor = false;
             // 
@@ -499,10 +472,9 @@
             this.bit13.BackColor = System.Drawing.Color.Transparent;
             this.bit13.Checked = true;
             this.bit13.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit13.Location = new System.Drawing.Point(1411, 289);
-            this.bit13.Margin = new System.Windows.Forms.Padding(4);
+            this.bit13.Location = new System.Drawing.Point(1058, 235);
             this.bit13.Name = "bit13";
-            this.bit13.Size = new System.Drawing.Size(18, 17);
+            this.bit13.Size = new System.Drawing.Size(15, 14);
             this.bit13.TabIndex = 16;
             this.bit13.UseVisualStyleBackColor = false;
             // 
@@ -512,10 +484,9 @@
             this.bit14.BackColor = System.Drawing.Color.Transparent;
             this.bit14.Checked = true;
             this.bit14.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit14.Location = new System.Drawing.Point(1411, 306);
-            this.bit14.Margin = new System.Windows.Forms.Padding(4);
+            this.bit14.Location = new System.Drawing.Point(1058, 249);
             this.bit14.Name = "bit14";
-            this.bit14.Size = new System.Drawing.Size(18, 17);
+            this.bit14.Size = new System.Drawing.Size(15, 14);
             this.bit14.TabIndex = 16;
             this.bit14.UseVisualStyleBackColor = false;
             // 
@@ -525,35 +496,36 @@
             this.bit15.BackColor = System.Drawing.Color.Transparent;
             this.bit15.Checked = true;
             this.bit15.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit15.Location = new System.Drawing.Point(1411, 324);
-            this.bit15.Margin = new System.Windows.Forms.Padding(4);
+            this.bit15.Location = new System.Drawing.Point(1058, 263);
             this.bit15.Name = "bit15";
-            this.bit15.Size = new System.Drawing.Size(18, 17);
+            this.bit15.Size = new System.Drawing.Size(15, 14);
             this.bit15.TabIndex = 16;
             this.bit15.UseVisualStyleBackColor = false;
             // 
             // SerialPortComboBox
             // 
             this.SerialPortComboBox.FormattingEnabled = true;
-            this.SerialPortComboBox.Location = new System.Drawing.Point(231, 10);
+            this.SerialPortComboBox.Location = new System.Drawing.Point(173, 8);
+            this.SerialPortComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SerialPortComboBox.Name = "SerialPortComboBox";
-            this.SerialPortComboBox.Size = new System.Drawing.Size(121, 24);
+            this.SerialPortComboBox.Size = new System.Drawing.Size(92, 21);
             this.SerialPortComboBox.TabIndex = 17;
             this.SerialPortComboBox.DropDown += new System.EventHandler(this.SerialPortComboBox_DropDown);
             // 
             // SerialSpeedComboBox
             // 
             this.SerialSpeedComboBox.FormattingEnabled = true;
-            this.SerialSpeedComboBox.Location = new System.Drawing.Point(358, 9);
+            this.SerialSpeedComboBox.Location = new System.Drawing.Point(268, 7);
+            this.SerialSpeedComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SerialSpeedComboBox.Name = "SerialSpeedComboBox";
-            this.SerialSpeedComboBox.Size = new System.Drawing.Size(121, 24);
+            this.SerialSpeedComboBox.Size = new System.Drawing.Size(92, 21);
             this.SerialSpeedComboBox.TabIndex = 18;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1596, 569);
+            this.ClientSize = new System.Drawing.Size(1197, 462);
             this.Controls.Add(this.SerialSpeedComboBox);
             this.Controls.Add(this.SerialPortComboBox);
             this.Controls.Add(this.bit15);
@@ -585,8 +557,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
+            this.ShowIcon = false;
             this.Text = "LogicAnalyzer";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
