@@ -33,24 +33,27 @@ void setup() {
   pinMode(data5, INPUT);
   pinMode(data6, INPUT);
   pinMode(data7, INPUT);
-  
+
+  /*
   pinMode(powerPin, OUTPUT);
   digitalWrite(powerPin, LOW);
   delay(1000);
   digitalWrite(powerPin, HIGH);
+  */
 
   Serial.begin(19200);
   while (!Serial) { ; }
+  Serial.println("what what");
 }
 
 byte in;
 int buff;
-//unsigned long times;
+unsigned long times;
 
 void loop() {
-  //times = micros();
-  
+  times = micros();
   buff = 2;
+  Serial.println("what what");
 
   if (digitalRead(green1) == HIGH) buff = buff | 1;
   buff = buff << 1;
@@ -84,7 +87,7 @@ void loop() {
   buff = buff << 1;
   if (digitalRead(data7) == HIGH) buff = buff | 1;
   //buff = buff << 1;
-
   Serial.println(buff);
-  //Serial.println(micros() - times);
+  Serial.println(micros() - times);
+  delay(4);
 }

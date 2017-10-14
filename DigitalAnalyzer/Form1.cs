@@ -22,6 +22,7 @@ namespace DigitalAnalyzer {
         public Form1() {
             InitializeComponent();
             chart1.MouseWheel += new MouseEventHandler(chart1_MouseWheel);
+            SerialSpeedComboBox.Items.Add(19200);
         }
 
         private void chart1_MouseWheel(object sender, MouseEventArgs e) {
@@ -67,7 +68,7 @@ namespace DigitalAnalyzer {
             try { com.Close(); } catch { }
 
             try {
-                com = new SerialPort("COM3", 19200);
+                com = new SerialPort((string) SerialPortComboBox.SelectedItem, (int) SerialSpeedComboBox.SelectedItem);
                 com.DataReceived += new SerialDataReceivedEventHandler(gotSomething);
                 com.DtrEnable = resetChk.Checked;
                 com.Open();
@@ -206,5 +207,14 @@ namespace DigitalAnalyzer {
                 dataList.Items.Add(bin.Substring(8, 8));
             }
         }
+
+        private void SerialPortComboBox_DropDown(object sender, EventArgs e) {
+            SerialPortComboBox.Items.Clear();
+            string[] ports = SerialPort.GetPortNames();
+            foreach(string port in ports) {
+                SerialPortComboBox.Items.Add(port);
+            }
+        }
+
     }
 }

@@ -69,14 +69,17 @@
             this.bit13 = new System.Windows.Forms.CheckBox();
             this.bit14 = new System.Windows.Forms.CheckBox();
             this.bit15 = new System.Windows.Forms.CheckBox();
+            this.SerialPortComboBox = new System.Windows.Forms.ComboBox();
+            this.SerialSpeedComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(93, 7);
+            this.button1.Location = new System.Drawing.Point(124, 9);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 1;
             this.button1.Text = "save data";
             this.button1.UseVisualStyleBackColor = true;
@@ -84,9 +87,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(255, 7);
+            this.button2.Location = new System.Drawing.Point(672, 8);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 2;
             this.button2.Text = "close";
             this.button2.UseVisualStyleBackColor = true;
@@ -95,9 +99,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(499, 12);
+            this.label1.Location = new System.Drawing.Point(965, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 13);
+            this.label1.Size = new System.Drawing.Size(166, 17);
             this.label1.TabIndex = 5;
             this.label1.Text = "4160 microseconds each";
             // 
@@ -129,7 +134,8 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(174, 34);
+            this.chart1.Location = new System.Drawing.Point(232, 42);
+            this.chart1.Margin = new System.Windows.Forms.Padding(4);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -227,7 +233,7 @@
             this.chart1.Series.Add(series14);
             this.chart1.Series.Add(series15);
             this.chart1.Series.Add(series16);
-            this.chart1.Size = new System.Drawing.Size(1011, 420);
+            this.chart1.Size = new System.Drawing.Size(1348, 517);
             this.chart1.TabIndex = 6;
             this.chart1.Text = "chart1";
             this.chart1.CursorPositionChanged += new System.EventHandler<System.Windows.Forms.DataVisualization.Charting.CursorEventArgs>(this.chart1_CursorPositionChanged);
@@ -235,9 +241,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(12, 7);
+            this.button4.Location = new System.Drawing.Point(16, 9);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(100, 28);
             this.button4.TabIndex = 8;
             this.button4.Text = "save control";
             this.button4.UseVisualStyleBackColor = true;
@@ -245,24 +252,29 @@
             // ctrlList
             // 
             this.ctrlList.FormattingEnabled = true;
-            this.ctrlList.Location = new System.Drawing.Point(12, 34);
+            this.ctrlList.ItemHeight = 16;
+            this.ctrlList.Location = new System.Drawing.Point(16, 42);
+            this.ctrlList.Margin = new System.Windows.Forms.Padding(4);
             this.ctrlList.Name = "ctrlList";
-            this.ctrlList.Size = new System.Drawing.Size(75, 420);
+            this.ctrlList.Size = new System.Drawing.Size(99, 516);
             this.ctrlList.TabIndex = 9;
             // 
             // dataList
             // 
             this.dataList.FormattingEnabled = true;
-            this.dataList.Location = new System.Drawing.Point(93, 34);
+            this.dataList.ItemHeight = 16;
+            this.dataList.Location = new System.Drawing.Point(124, 42);
+            this.dataList.Margin = new System.Windows.Forms.Padding(4);
             this.dataList.Name = "dataList";
-            this.dataList.Size = new System.Drawing.Size(75, 420);
+            this.dataList.Size = new System.Drawing.Size(99, 516);
             this.dataList.TabIndex = 10;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(174, 7);
+            this.button3.Location = new System.Drawing.Point(564, 8);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(100, 28);
             this.button3.TabIndex = 11;
             this.button3.Text = "open";
             this.button3.UseVisualStyleBackColor = true;
@@ -271,18 +283,20 @@
             // resetChk
             // 
             this.resetChk.AutoSize = true;
-            this.resetChk.Location = new System.Drawing.Point(336, 11);
+            this.resetChk.Location = new System.Drawing.Point(780, 13);
+            this.resetChk.Margin = new System.Windows.Forms.Padding(4);
             this.resetChk.Name = "resetChk";
-            this.resetChk.Size = new System.Drawing.Size(106, 17);
+            this.resetChk.Size = new System.Drawing.Size(136, 21);
             this.resetChk.TabIndex = 12;
             this.resetChk.Text = "reset on connect";
             this.resetChk.UseVisualStyleBackColor = true;
             // 
             // load
             // 
-            this.load.Location = new System.Drawing.Point(1110, 7);
+            this.load.Location = new System.Drawing.Point(1480, 9);
+            this.load.Margin = new System.Windows.Forms.Padding(4);
             this.load.Name = "load";
-            this.load.Size = new System.Drawing.Size(75, 23);
+            this.load.Size = new System.Drawing.Size(100, 28);
             this.load.TabIndex = 13;
             this.load.Text = "load";
             this.load.UseVisualStyleBackColor = true;
@@ -290,9 +304,10 @@
             // 
             // save
             // 
-            this.save.Location = new System.Drawing.Point(1029, 7);
+            this.save.Location = new System.Drawing.Point(1372, 9);
+            this.save.Margin = new System.Windows.Forms.Padding(4);
             this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(75, 23);
+            this.save.Size = new System.Drawing.Size(100, 28);
             this.save.TabIndex = 14;
             this.save.Text = "save";
             this.save.UseVisualStyleBackColor = true;
@@ -300,9 +315,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(790, 7);
+            this.button5.Location = new System.Drawing.Point(1200, 9);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(100, 28);
             this.button5.TabIndex = 15;
             this.button5.Text = "fill lists";
             this.button5.UseVisualStyleBackColor = true;
@@ -314,9 +330,10 @@
             this.bit0.BackColor = System.Drawing.Color.Transparent;
             this.bit0.Checked = true;
             this.bit0.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit0.Location = new System.Drawing.Point(1058, 53);
+            this.bit0.Location = new System.Drawing.Point(1411, 65);
+            this.bit0.Margin = new System.Windows.Forms.Padding(4);
             this.bit0.Name = "bit0";
-            this.bit0.Size = new System.Drawing.Size(15, 14);
+            this.bit0.Size = new System.Drawing.Size(18, 17);
             this.bit0.TabIndex = 16;
             this.bit0.UseVisualStyleBackColor = false;
             // 
@@ -326,9 +343,10 @@
             this.bit1.BackColor = System.Drawing.Color.Transparent;
             this.bit1.Checked = true;
             this.bit1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit1.Location = new System.Drawing.Point(1058, 67);
+            this.bit1.Location = new System.Drawing.Point(1411, 82);
+            this.bit1.Margin = new System.Windows.Forms.Padding(4);
             this.bit1.Name = "bit1";
-            this.bit1.Size = new System.Drawing.Size(15, 14);
+            this.bit1.Size = new System.Drawing.Size(18, 17);
             this.bit1.TabIndex = 16;
             this.bit1.UseVisualStyleBackColor = false;
             // 
@@ -338,9 +356,10 @@
             this.bit2.BackColor = System.Drawing.Color.Transparent;
             this.bit2.Checked = true;
             this.bit2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit2.Location = new System.Drawing.Point(1058, 81);
+            this.bit2.Location = new System.Drawing.Point(1411, 100);
+            this.bit2.Margin = new System.Windows.Forms.Padding(4);
             this.bit2.Name = "bit2";
-            this.bit2.Size = new System.Drawing.Size(15, 14);
+            this.bit2.Size = new System.Drawing.Size(18, 17);
             this.bit2.TabIndex = 16;
             this.bit2.UseVisualStyleBackColor = false;
             // 
@@ -350,9 +369,10 @@
             this.bit3.BackColor = System.Drawing.Color.Transparent;
             this.bit3.Checked = true;
             this.bit3.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit3.Location = new System.Drawing.Point(1058, 95);
+            this.bit3.Location = new System.Drawing.Point(1411, 117);
+            this.bit3.Margin = new System.Windows.Forms.Padding(4);
             this.bit3.Name = "bit3";
-            this.bit3.Size = new System.Drawing.Size(15, 14);
+            this.bit3.Size = new System.Drawing.Size(18, 17);
             this.bit3.TabIndex = 16;
             this.bit3.UseVisualStyleBackColor = false;
             // 
@@ -362,9 +382,10 @@
             this.bit4.BackColor = System.Drawing.Color.Transparent;
             this.bit4.Checked = true;
             this.bit4.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit4.Location = new System.Drawing.Point(1058, 109);
+            this.bit4.Location = new System.Drawing.Point(1411, 134);
+            this.bit4.Margin = new System.Windows.Forms.Padding(4);
             this.bit4.Name = "bit4";
-            this.bit4.Size = new System.Drawing.Size(15, 14);
+            this.bit4.Size = new System.Drawing.Size(18, 17);
             this.bit4.TabIndex = 16;
             this.bit4.UseVisualStyleBackColor = false;
             // 
@@ -374,9 +395,10 @@
             this.bit5.BackColor = System.Drawing.Color.Transparent;
             this.bit5.Checked = true;
             this.bit5.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit5.Location = new System.Drawing.Point(1058, 123);
+            this.bit5.Location = new System.Drawing.Point(1411, 151);
+            this.bit5.Margin = new System.Windows.Forms.Padding(4);
             this.bit5.Name = "bit5";
-            this.bit5.Size = new System.Drawing.Size(15, 14);
+            this.bit5.Size = new System.Drawing.Size(18, 17);
             this.bit5.TabIndex = 16;
             this.bit5.UseVisualStyleBackColor = false;
             // 
@@ -386,9 +408,10 @@
             this.bit6.BackColor = System.Drawing.Color.Transparent;
             this.bit6.Checked = true;
             this.bit6.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit6.Location = new System.Drawing.Point(1058, 137);
+            this.bit6.Location = new System.Drawing.Point(1411, 169);
+            this.bit6.Margin = new System.Windows.Forms.Padding(4);
             this.bit6.Name = "bit6";
-            this.bit6.Size = new System.Drawing.Size(15, 14);
+            this.bit6.Size = new System.Drawing.Size(18, 17);
             this.bit6.TabIndex = 16;
             this.bit6.UseVisualStyleBackColor = false;
             // 
@@ -398,9 +421,10 @@
             this.bit7.BackColor = System.Drawing.Color.Transparent;
             this.bit7.Checked = true;
             this.bit7.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit7.Location = new System.Drawing.Point(1058, 151);
+            this.bit7.Location = new System.Drawing.Point(1411, 186);
+            this.bit7.Margin = new System.Windows.Forms.Padding(4);
             this.bit7.Name = "bit7";
-            this.bit7.Size = new System.Drawing.Size(15, 14);
+            this.bit7.Size = new System.Drawing.Size(18, 17);
             this.bit7.TabIndex = 16;
             this.bit7.UseVisualStyleBackColor = false;
             // 
@@ -410,9 +434,10 @@
             this.bit8.BackColor = System.Drawing.Color.Transparent;
             this.bit8.Checked = true;
             this.bit8.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit8.Location = new System.Drawing.Point(1058, 165);
+            this.bit8.Location = new System.Drawing.Point(1411, 203);
+            this.bit8.Margin = new System.Windows.Forms.Padding(4);
             this.bit8.Name = "bit8";
-            this.bit8.Size = new System.Drawing.Size(15, 14);
+            this.bit8.Size = new System.Drawing.Size(18, 17);
             this.bit8.TabIndex = 16;
             this.bit8.UseVisualStyleBackColor = false;
             // 
@@ -422,9 +447,10 @@
             this.bit9.BackColor = System.Drawing.Color.Transparent;
             this.bit9.Checked = true;
             this.bit9.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit9.Location = new System.Drawing.Point(1058, 179);
+            this.bit9.Location = new System.Drawing.Point(1411, 220);
+            this.bit9.Margin = new System.Windows.Forms.Padding(4);
             this.bit9.Name = "bit9";
-            this.bit9.Size = new System.Drawing.Size(15, 14);
+            this.bit9.Size = new System.Drawing.Size(18, 17);
             this.bit9.TabIndex = 16;
             this.bit9.UseVisualStyleBackColor = false;
             // 
@@ -434,9 +460,10 @@
             this.bit10.BackColor = System.Drawing.Color.Transparent;
             this.bit10.Checked = true;
             this.bit10.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit10.Location = new System.Drawing.Point(1058, 193);
+            this.bit10.Location = new System.Drawing.Point(1411, 238);
+            this.bit10.Margin = new System.Windows.Forms.Padding(4);
             this.bit10.Name = "bit10";
-            this.bit10.Size = new System.Drawing.Size(15, 14);
+            this.bit10.Size = new System.Drawing.Size(18, 17);
             this.bit10.TabIndex = 16;
             this.bit10.UseVisualStyleBackColor = false;
             // 
@@ -446,9 +473,10 @@
             this.bit11.BackColor = System.Drawing.Color.Transparent;
             this.bit11.Checked = true;
             this.bit11.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit11.Location = new System.Drawing.Point(1058, 207);
+            this.bit11.Location = new System.Drawing.Point(1411, 255);
+            this.bit11.Margin = new System.Windows.Forms.Padding(4);
             this.bit11.Name = "bit11";
-            this.bit11.Size = new System.Drawing.Size(15, 14);
+            this.bit11.Size = new System.Drawing.Size(18, 17);
             this.bit11.TabIndex = 16;
             this.bit11.UseVisualStyleBackColor = false;
             // 
@@ -458,9 +486,10 @@
             this.bit12.BackColor = System.Drawing.Color.Transparent;
             this.bit12.Checked = true;
             this.bit12.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit12.Location = new System.Drawing.Point(1058, 221);
+            this.bit12.Location = new System.Drawing.Point(1411, 272);
+            this.bit12.Margin = new System.Windows.Forms.Padding(4);
             this.bit12.Name = "bit12";
-            this.bit12.Size = new System.Drawing.Size(15, 14);
+            this.bit12.Size = new System.Drawing.Size(18, 17);
             this.bit12.TabIndex = 16;
             this.bit12.UseVisualStyleBackColor = false;
             // 
@@ -470,9 +499,10 @@
             this.bit13.BackColor = System.Drawing.Color.Transparent;
             this.bit13.Checked = true;
             this.bit13.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit13.Location = new System.Drawing.Point(1058, 235);
+            this.bit13.Location = new System.Drawing.Point(1411, 289);
+            this.bit13.Margin = new System.Windows.Forms.Padding(4);
             this.bit13.Name = "bit13";
-            this.bit13.Size = new System.Drawing.Size(15, 14);
+            this.bit13.Size = new System.Drawing.Size(18, 17);
             this.bit13.TabIndex = 16;
             this.bit13.UseVisualStyleBackColor = false;
             // 
@@ -482,9 +512,10 @@
             this.bit14.BackColor = System.Drawing.Color.Transparent;
             this.bit14.Checked = true;
             this.bit14.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit14.Location = new System.Drawing.Point(1058, 249);
+            this.bit14.Location = new System.Drawing.Point(1411, 306);
+            this.bit14.Margin = new System.Windows.Forms.Padding(4);
             this.bit14.Name = "bit14";
-            this.bit14.Size = new System.Drawing.Size(15, 14);
+            this.bit14.Size = new System.Drawing.Size(18, 17);
             this.bit14.TabIndex = 16;
             this.bit14.UseVisualStyleBackColor = false;
             // 
@@ -494,17 +525,37 @@
             this.bit15.BackColor = System.Drawing.Color.Transparent;
             this.bit15.Checked = true;
             this.bit15.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bit15.Location = new System.Drawing.Point(1058, 263);
+            this.bit15.Location = new System.Drawing.Point(1411, 324);
+            this.bit15.Margin = new System.Windows.Forms.Padding(4);
             this.bit15.Name = "bit15";
-            this.bit15.Size = new System.Drawing.Size(15, 14);
+            this.bit15.Size = new System.Drawing.Size(18, 17);
             this.bit15.TabIndex = 16;
             this.bit15.UseVisualStyleBackColor = false;
             // 
+            // SerialPortComboBox
+            // 
+            this.SerialPortComboBox.FormattingEnabled = true;
+            this.SerialPortComboBox.Location = new System.Drawing.Point(231, 10);
+            this.SerialPortComboBox.Name = "SerialPortComboBox";
+            this.SerialPortComboBox.Size = new System.Drawing.Size(121, 24);
+            this.SerialPortComboBox.TabIndex = 17;
+            this.SerialPortComboBox.DropDown += new System.EventHandler(this.SerialPortComboBox_DropDown);
+            // 
+            // SerialSpeedComboBox
+            // 
+            this.SerialSpeedComboBox.FormattingEnabled = true;
+            this.SerialSpeedComboBox.Location = new System.Drawing.Point(358, 9);
+            this.SerialSpeedComboBox.Name = "SerialSpeedComboBox";
+            this.SerialSpeedComboBox.Size = new System.Drawing.Size(121, 24);
+            this.SerialSpeedComboBox.TabIndex = 18;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1197, 462);
+            this.ClientSize = new System.Drawing.Size(1596, 569);
+            this.Controls.Add(this.SerialSpeedComboBox);
+            this.Controls.Add(this.SerialPortComboBox);
             this.Controls.Add(this.bit15);
             this.Controls.Add(this.bit14);
             this.Controls.Add(this.bit13);
@@ -533,8 +584,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "LogicAnalyzer";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -570,6 +623,8 @@
         private System.Windows.Forms.CheckBox bit13;
         private System.Windows.Forms.CheckBox bit14;
         private System.Windows.Forms.CheckBox bit15;
+        private System.Windows.Forms.ComboBox SerialPortComboBox;
+        private System.Windows.Forms.ComboBox SerialSpeedComboBox;
     }
 }
 
