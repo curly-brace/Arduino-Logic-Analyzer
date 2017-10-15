@@ -28,8 +28,9 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace DigitalAnalyzer {
     public partial class Form1:Form {
-        private static SerialPort com;
-        private int prevX = 0;
+        private static SerialPort _com;
+        private int _prevX = 0;
+        private int _prevXrem = 0;
         private delegate void GetTextDeleg(List<string> strings);
         private delegate void GetStringDeleg(string data);
 
@@ -37,6 +38,7 @@ namespace DigitalAnalyzer {
             InitializeComponent();
             chart1.MouseWheel += new MouseEventHandler(chart1_MouseWheel);
             SerialSpeedComboBox.Items.Add(19200);
+            SerialSpeedComboBox.Items.Add(115200);
         }
 
         private void chart1_MouseWheel(object sender, MouseEventArgs e) {
@@ -79,38 +81,39 @@ namespace DigitalAnalyzer {
         }
 
         private void button1_Click(object sender, EventArgs e) {
-            try { com.Close(); } catch { }
+            try { _com.Close(); } catch { }
 
             try {
-                com = new SerialPort((string) SerialPortComboBox.SelectedItem, (int) SerialSpeedComboBox.SelectedItem);
-                com.DataReceived += new SerialDataReceivedEventHandler(gotSomething);
-                com.DtrEnable = resetChk.Checked;
-                com.Open();
+                _com = new SerialPort((string) SerialPortComboBox.SelectedItem, (int) SerialSpeedComboBox.SelectedItem);
+                _com.DataReceived += new SerialDataReceivedEventHandler(GotSomething);
+                _com.DtrEnable = resetChk.Checked;
+                _com.Open();
+                _com.Write(DelayTextBox.Text);
             } catch (Exception exe) { MessageBox.Show($"Something went wrong!\n{exe.ToString()}"); }
         }
 
-        void gotSomething(object sender, SerialDataReceivedEventArgs e) {
+        void GotSomething(object sender, SerialDataReceivedEventArgs e) {
             String input = String.Empty;
             //input = com.ReadLine();
 
             //BeginInvoke(new GetStringDeleg(processInputString), new object[] { input });
 
-            int bytes = com.BytesToRead;
+            int bytes = _com.BytesToRead;
             byte[] buffer = new byte[bytes];
-            com.Read(buffer, 0, bytes);
+            _com.Read(buffer, 0, bytes);
 
             //TODO don't check if null but check if empty
-            if (buffer.Length != 0) bytesToStrings(buffer);
+            if (buffer.Length != 0) BytesToStrings(buffer);
         }
 
-        void bytesToStrings(byte[] bytes) {
+        void BytesToStrings(byte[] bytes) {
             List<string> strings = new List<string>();
 
             string temp = String.Empty;
 
-            for (int i = 0; i < bytes.Length; i++) {
-                if ((char)bytes[i] != '\r') {
-                    temp += (char)bytes[i];
+            foreach (byte t in bytes) {
+                if ((char)t != '\r') {
+                    temp += (char)t;
                 } else {
                     if (temp != String.Empty) {
                         strings.Add(temp);
@@ -136,6 +139,7 @@ namespace DigitalAnalyzer {
         }
 
         private void ProcessInputString(string data) {
+            // TODO somehow handle this exception
             string bin = Convert.ToString(Int32.Parse(data), 2).PadLeft(16, '0');
 
             chart1.Series.SuspendUpdates();
@@ -154,24 +158,35 @@ namespace DigitalAnalyzer {
 
                 double y = offset + (bin[i] == '1' ? 1 : 0);
 
-                chart1.Series[i].Points.AddXY(prevX, y);
-                chart1.Series[i].Points.AddXY(prevX + 1, y);
+                chart1.Series[i].Points.AddXY(_prevX, y);
+                chart1.Series[i].Points.AddXY(_prevX + 1, y);
+
+                // TODO play around with this to display only last 1000 points
+                /*
+                if (chart1.Series[i].Points.Count > 1000) {
+                    chart1.Series[i].Points.RemoveAt(0);
+                    chart1.Series[i].Points.RemoveAt(0);
+                }*/
+
                 offset += 2;
             }
 
-            prevX++;
+            _prevX++;
+
+            DelayTextBox.Text = chart1.Series[1].Points.Count.ToString();
+
 
             chart1.Series.ResumeUpdates();
 
             chart1.ChartAreas[0].AxisX.ScaleView.Scroll(chart1.ChartAreas[0].AxisX.Maximum);
 
-            ctrlList.Items.Add(bin.Substring(0, 8));
-            dataList.Items.Add(bin.Substring(8, 8));
+            //ctrlList.Items.Add(bin.Substring(0, 8));
+            //dataList.Items.Add(bin.Substring(8, 8));
         }
 
         private void button2_Click(object sender, EventArgs e) {
-            try { com.Close(); } catch { }
-            com.DataReceived -= gotSomething;
+            try { _com.Close(); } catch { }
+            _com.DataReceived -= GotSomething;
         }
 
         private void chart1_MouseEnter(object sender, EventArgs e) {
@@ -179,6 +194,7 @@ namespace DigitalAnalyzer {
         }
 
         private void chart1_CursorPositionChanged(object sender, CursorEventArgs e) {
+            // FIX This throws exception if selected during acquisition
             ctrlList.SelectedIndex = (int)e.NewPosition;
             dataList.SelectedIndex = (int)e.NewPosition;
         }
@@ -229,5 +245,17 @@ namespace DigitalAnalyzer {
             }
         }
 
+        private void Form1_Load(object sender, EventArgs e) {
+            
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e) {
+            base.OnFormClosing(e);
+
+            if(e.CloseReason == CloseReason.WindowsShutDown)
+                return;
+
+            Environment.Exit(0);
+        }
     }
 }

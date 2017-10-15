@@ -46,9 +46,11 @@ void setup() {
   digitalWrite(powerPin, HIGH);
   */
 
-  Serial.begin(19200);
+  Serial.begin(115200);
   while (!Serial) { ; }
 }
+
+
 
 byte in;
 int buff;
@@ -95,7 +97,10 @@ void loop() {
   if (digitalRead(data7) == HIGH) buff = buff | 1;
   //buff = buff << 1;*/
   Serial.println(buff);
-  delay(4);
+  //delay(4);
+
+  delay(4); //testing how the code wil handle slow refresh rate
+  
   //}
   /*
   Serial.println("Time test:");
