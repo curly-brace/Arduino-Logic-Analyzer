@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO.Ports;
 using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
@@ -37,8 +32,17 @@ namespace DigitalAnalyzer {
         public Form1() {
             InitializeComponent();
             chart1.MouseWheel += new MouseEventHandler(chart1_MouseWheel);
+
             SerialSpeedComboBox.Items.Add(19200);
             SerialSpeedComboBox.Items.Add(115200);
+            SerialSpeedComboBox.SelectedItem = 115200;
+
+
+            string[] ports = SerialPort.GetPortNames();
+            foreach(string port in ports) {
+                SerialPortComboBox.Items.Add(port);
+                SerialPortComboBox.SelectedItem = port;
+            }
         }
 
         private void chart1_MouseWheel(object sender, MouseEventArgs e) {
@@ -161,17 +165,22 @@ namespace DigitalAnalyzer {
                 chart1.Series[i].Points.AddXY(_prevX, y);
                 chart1.Series[i].Points.AddXY(_prevX + 1, y);
 
-                // TODO play around with this to display only last 1000 points
-                /*
-                if (chart1.Series[i].Points.Count > 1000) {
+
+                // HACK Each loop adds 2 points. Removing first 2 points each loop stops working, but removing 3 works fine?
+                // I think that somehow changing the number of point triggers view update
+                if(chart1.Series[i].Points.Count >= 200) {
                     chart1.Series[i].Points.RemoveAt(0);
                     chart1.Series[i].Points.RemoveAt(0);
-                }*/
+                    //chart1.Series[i].Points.RemoveAt(0);
+                }
 
                 offset += 2;
             }
 
             _prevX++;
+
+            // Hack part 2 - yea this fixes from few lines up
+            chart1.ResetAutoValues();
 
             DelayTextBox.Text = chart1.Series[1].Points.Count.ToString();
 
