@@ -12,6 +12,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
+
+
+// TODO Fix infinite memory use - currently all teh data is saved, maybe celear every 10000 samples
+// TODO Compression - don't store data, store events like state change
+// TODO decimation - show every Nth sample
+// TODO Move to oxycharts or live charts
+// TODO clear data
+// TODO auto program the arduino
+// TODO add data to send to the board
+// TODO show time between readings
+// TODO send serial data as BIN not string, or add something for determinism
+// TODO self calibrate code for e.g. fixed 1 khz sample rate
+
+
 namespace DigitalAnalyzer {
     public partial class Form1:Form {
         private static SerialPort com;
@@ -72,7 +86,7 @@ namespace DigitalAnalyzer {
                 com.DataReceived += new SerialDataReceivedEventHandler(gotSomething);
                 com.DtrEnable = resetChk.Checked;
                 com.Open();
-            } catch { MessageBox.Show("something went wrong!"); }
+            } catch (Exception exe) { MessageBox.Show($"Something went wrong!\n{exe.ToString()}"); }
         }
 
         void gotSomething(object sender, SerialDataReceivedEventArgs e) {
@@ -85,7 +99,8 @@ namespace DigitalAnalyzer {
             byte[] buffer = new byte[bytes];
             com.Read(buffer, 0, bytes);
 
-            if (buffer != null) bytesToStrings(buffer);
+            //TODO don't check if null but check if empty
+            if (buffer.Length != 0) bytesToStrings(buffer);
         }
 
         void bytesToStrings(byte[] bytes) {
@@ -104,12 +119,12 @@ namespace DigitalAnalyzer {
                 }
             }
 
-            BeginInvoke(new GetTextDeleg(processInput), new object[] { strings });
+            BeginInvoke(new GetTextDeleg(ProcessInput), new object[] { strings });
         }
 
-        private void processInput(List<string> strings) {
+        private void ProcessInput(List<string> strings) {
             for (int s = 0; s < strings.Count; s++) {
-                processInputString(strings[s]);
+                ProcessInputString(strings[s]);
             }
 
             /*
@@ -120,7 +135,7 @@ namespace DigitalAnalyzer {
             }*/
         }
 
-        private void processInputString(string data) {
+        private void ProcessInputString(string data) {
             string bin = Convert.ToString(Int32.Parse(data), 2).PadLeft(16, '0');
 
             chart1.Series.SuspendUpdates();
@@ -169,8 +184,7 @@ namespace DigitalAnalyzer {
         }
 
         private void load_Click(object sender, EventArgs e) {
-            OpenFileDialog loadFile = new OpenFileDialog();
-            loadFile.Title = "Load data";
+            OpenFileDialog loadFile = new OpenFileDialog {Title = "Load data"};
             loadFile.ShowDialog();
 
             if (loadFile.FileName != "") {
@@ -179,8 +193,7 @@ namespace DigitalAnalyzer {
         }
 
         private void save_Click(object sender, EventArgs e) {
-            SaveFileDialog saveFile = new SaveFileDialog();
-            saveFile.Title = "Save data";
+            SaveFileDialog saveFile = new SaveFileDialog {Title = "Save data"};
             saveFile.ShowDialog();
 
             if (saveFile.FileName != "") {
