@@ -19,6 +19,8 @@ using System.Windows.Forms.DataVisualization.Charting;
 // TODO show time between readings
 // TODO send serial data as BIN not string, or add something for determinism
 // TODO self calibrate code for e.g. fixed 1 khz sample rate
+// TODO make resizable
+// TODO group into vectors
 
 
 namespace DigitalAnalyzer {
@@ -155,8 +157,14 @@ namespace DigitalAnalyzer {
             for (int i = 15; i >= 0; i--) {
                 //if (bin[i] == '\n' || data[i] == ';') continue;
 
+
+               
+
+
+
                 if (!((CheckBox)Controls.Find("bit" + i, false)[0]).Checked) {
                     offset += 2;
+                    chart1.Series[i].Points.Clear();
                     continue;
                 }
 
