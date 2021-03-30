@@ -69,6 +69,9 @@
             this.bit13 = new System.Windows.Forms.CheckBox();
             this.bit14 = new System.Windows.Forms.CheckBox();
             this.bit15 = new System.Windows.Forms.CheckBox();
+            this.SerialPortComboBox = new System.Windows.Forms.ComboBox();
+            this.SerialSpeedComboBox = new System.Windows.Forms.ComboBox();
+            this.DelayTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,24 +81,24 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
-            this.button1.Text = "save data";
+            this.button1.Text = "Save data";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(255, 7);
+            this.button2.Location = new System.Drawing.Point(542, 6);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
-            this.button2.Text = "close";
+            this.button2.Text = "Close";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(499, 12);
+            this.label1.Location = new System.Drawing.Point(746, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 13);
             this.label1.TabIndex = 5;
@@ -239,7 +242,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 8;
-            this.button4.Text = "save control";
+            this.button4.Text = "Save control";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // ctrlList
@@ -260,18 +263,18 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(174, 7);
+            this.button3.Location = new System.Drawing.Point(461, 6);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 11;
-            this.button3.Text = "open";
+            this.button3.Text = "Open";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button1_Click);
             // 
             // resetChk
             // 
             this.resetChk.AutoSize = true;
-            this.resetChk.Location = new System.Drawing.Point(336, 11);
+            this.resetChk.Location = new System.Drawing.Point(623, 11);
             this.resetChk.Name = "resetChk";
             this.resetChk.Size = new System.Drawing.Size(106, 17);
             this.resetChk.TabIndex = 12;
@@ -284,7 +287,7 @@
             this.load.Name = "load";
             this.load.Size = new System.Drawing.Size(75, 23);
             this.load.TabIndex = 13;
-            this.load.Text = "load";
+            this.load.Text = "Load";
             this.load.UseVisualStyleBackColor = true;
             this.load.Click += new System.EventHandler(this.load_Click);
             // 
@@ -294,17 +297,17 @@
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(75, 23);
             this.save.TabIndex = 14;
-            this.save.Text = "save";
+            this.save.Text = "Save";
             this.save.UseVisualStyleBackColor = true;
             this.save.Click += new System.EventHandler(this.save_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(790, 7);
+            this.button5.Location = new System.Drawing.Point(900, 7);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 15;
-            this.button5.Text = "fill lists";
+            this.button5.Text = "Fill lists";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -500,11 +503,40 @@
             this.bit15.TabIndex = 16;
             this.bit15.UseVisualStyleBackColor = false;
             // 
+            // SerialPortComboBox
+            // 
+            this.SerialPortComboBox.FormattingEnabled = true;
+            this.SerialPortComboBox.Location = new System.Drawing.Point(173, 8);
+            this.SerialPortComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.SerialPortComboBox.Name = "SerialPortComboBox";
+            this.SerialPortComboBox.Size = new System.Drawing.Size(92, 21);
+            this.SerialPortComboBox.TabIndex = 17;
+            this.SerialPortComboBox.DropDown += new System.EventHandler(this.SerialPortComboBox_DropDown);
+            // 
+            // SerialSpeedComboBox
+            // 
+            this.SerialSpeedComboBox.FormattingEnabled = true;
+            this.SerialSpeedComboBox.Location = new System.Drawing.Point(268, 7);
+            this.SerialSpeedComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.SerialSpeedComboBox.Name = "SerialSpeedComboBox";
+            this.SerialSpeedComboBox.Size = new System.Drawing.Size(92, 21);
+            this.SerialSpeedComboBox.TabIndex = 18;
+            // 
+            // DelayTextBox
+            // 
+            this.DelayTextBox.Location = new System.Drawing.Point(365, 7);
+            this.DelayTextBox.Name = "DelayTextBox";
+            this.DelayTextBox.Size = new System.Drawing.Size(84, 20);
+            this.DelayTextBox.TabIndex = 19;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1197, 462);
+            this.Controls.Add(this.DelayTextBox);
+            this.Controls.Add(this.SerialSpeedComboBox);
+            this.Controls.Add(this.SerialPortComboBox);
             this.Controls.Add(this.bit15);
             this.Controls.Add(this.bit14);
             this.Controls.Add(this.bit13);
@@ -533,8 +565,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.ShowIcon = false;
+            this.Text = "LogicAnalyzer";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -570,6 +605,9 @@
         private System.Windows.Forms.CheckBox bit13;
         private System.Windows.Forms.CheckBox bit14;
         private System.Windows.Forms.CheckBox bit15;
+        private System.Windows.Forms.ComboBox SerialPortComboBox;
+        private System.Windows.Forms.ComboBox SerialSpeedComboBox;
+        private System.Windows.Forms.TextBox DelayTextBox;
     }
 }
 
